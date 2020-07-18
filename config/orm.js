@@ -12,6 +12,7 @@ const orm = {
       cb(result);
     });
   },
+  
   insertOne: (table, newRowData, cb) => {
     const queryString = "INSERT INTO ?? SET ?";
     const values = [table, newRowData];
@@ -24,8 +25,6 @@ const orm = {
     });
   },
 
-  // Example of updateValues: { name: "panther", sleepy: true }
-  // Example of condition: { id: 1 }
   updateOne: (table, updateValues, condition, cb) => {
     const queryString = "UPDATE ?? SET ? WHERE ?";
     const values = [table, updateValues, condition];
