@@ -3,8 +3,8 @@ li {
   margin: 5px;
 }
 
-.float-left {
-  float: left;
+.image-holder {
+  text-align: center;
 }
 
 .label {
